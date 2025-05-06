@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.cta {
+    background-color: rgb(30, 212, 30);
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+    padding: 10px 5%;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+section {
+    padding: 20px 5%;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 4%;
+    gap: 1.3rem;
+}
+header .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+header .hero h1 {
+    color: goldenrod;
+    font-size: 62px;
+}
+header .hero p {
+    font-size: 28px;
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info {
+    border: 1px solid goldenrod;
+    border-radius: 15px;
+    padding: 5px 4%;
+    height: 280px;
+    width: 380px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+/*Fim da sessão info-box / inicio da sessão sobre*/
+.sobre {
+    display: flex;
+    gap: 1.8rem;
+}
+.sobre-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    flex: 1;
+}
+.sobre-text h2 {
+    font-size: 42px;
+}
+.sobre-text p {
+    font-size: 28px;
+}
+.sobre-img {
+    flex: 1;
+}
+.sobre img {
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px 5px goldenrod;
+}
+/*Fim da sessão sobre / inicio da sessão metodo*/
+.metodo {
+    display: flex;
+    flex-direction: column;
+    
+}
+.metodo-text h2 {
+    font-size: 52px;
+    text-align: center;
+}
+.metodo-text ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+    gap: 2rem;
+}
+.metodo-text li {
+    border: 1px solid goldenrod;
+    border-radius: 15px;
+    background-color: goldenrod;
+    padding: 20px 5%;
+}
+.metodo-text li h3 {
+    font-size: 32px;
+}
+.metodo-text li p {
+    font-size: 28px;
+}
+/*Fim da sessão metodo / inicio da sessão testimonials*/
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.testimonials h2 {
+    font-size: 52px;
+}
+.testimonials p {
+    font-size: 28px;
+
+}
+.testimonials video {
+    width: 100%;
+}
+/*Fim da sessão testimonials / inicio da sessão garantia*/
+.garantia {
+    display: flex;
+    background-color: white;
+    color: black;
+}
+.garantia-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.garantia-text h2 {
+    font-size: 42px;
+}
+.garantia-text p {
+    font-size: 28px;
+}
+/*Fim da sessão garantia / inicio da sessão cta-section*/
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-color: goldenrod;
+    color: black;
+}
+.cta-section h2 {
+    font-size: 42px;
+    text-align: center;
+}
+.cta-section p {
+    font-size: 32px;
+    text-align: center;
+}
+/*Fim da sessão cta-section / inicio da sessão oferta*/
+.oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    background-color: white;
+    color: black;
+}
+.oferta h2 {
+    font-size: 42px;
+    text-transform: uppercase;
+}
+.oferta p {
+    font-size: 32px;
+}
+.oferta s {
+    font-size: 52px;
+    color: red;
+}
+.oferta p span {
+    font-size: 62px;
+    font-weight: bold;
+    color: goldenrod;
+}
+.oferta ul {
+    text-align: left;
+    list-style: none;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.oferta li {
+    font-size: 28px;
+    background-color: goldenrod;
+    border-radius: 12px;
+    padding: 10px 1%;
+
+}
+/*fim da sessão oferta / inicio da sessão faq*/
+.faq-section {
+    padding: 20px 5%;
+   
+  }
+  
+  .faq-title {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: goldenrod;
+    text-transform: uppercase;
+  }
+  
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 3%;
+    font-size: 1.1rem;
+    background-color: goldenrod;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+  }
+  
+  .faq-answer {
+    font-size: 25px;
+    margin-top: 20px;
+    color: black;
+    font-weight: 500;
+  }
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+  .icone {
+    width: 84px;
+    height: 84px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icone img {
+    width: 42px;
+    height: 42px;
+    filter: brightness(0) invert(1); /* Deixa o ícone branco */
+    transition: filter 0.3s ease;
+  }
+  
+  /* Hover com fundo personalizado por rede */
+  .icone.instagram:hover {
+    background-color: #e1306c; /* rosa Instagram */
+  }
+  
+  .icone.whatsapp:hover {
+    background-color: #25d366; /* verde WhatsApp */
+  }
+  
+  /* (Opcional) Efeito de sombra no hover */
+  .icone:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5%;
+}
+footer h3 {
+    font-size: 42px;
+}
+
+
+
+@media screen and (max-width: 1020px) {
+    
+    header .hero {
+        padding: 0;
+        text-align: left;
+    }
+    header .hero h1{
+        font-size: 32px;
+        
+    }
+    header .hero p {
+        font-size: 25px;
+    }
+    section {
+        flex-direction: column-reverse;
+    }
+    .info-box {
+        gap: 1.3rem;
+    }
+    .info{
+        width: 100%;
+    }
+    .sobre img {
+        width: 100%;
+    }
+    
+}
