@@ -55,6 +55,14 @@ header .hero p {
     font-size: 28px;
 }
 
+.info-quem {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.info-quem h2 {
+    font-size: 42px;
+}
 .info-box {
     display: flex;
     gap: 16px;
@@ -63,6 +71,9 @@ header .hero p {
     -webkit-overflow-scrolling: touch;
     padding: 20px;
     scroll-padding-left: 20px;
+    
+    align-items: center;
+    justify-content: center;
   }
   
   .info-box::-webkit-scrollbar {
@@ -101,7 +112,7 @@ header .hero p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-size: 50%;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.15;
@@ -368,6 +379,10 @@ footer h3 {
     header .hero {
         padding: 0;
         text-align: left;
+    }
+    header .hero img {
+        width: 100%;
+        
     }
     header .hero h1{
         font-size: 32px;
