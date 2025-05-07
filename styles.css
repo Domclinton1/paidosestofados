@@ -264,8 +264,8 @@ header .hero p {
 /*Fim da sessão testimonials / inicio da sessão garantia*/
 .garantia {
     display: flex;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 .garantia-text {
     display: flex;
@@ -467,7 +467,7 @@ header .hero p {
   .garantia {
     font-size: 14px;
     margin-top: 12px;
-    color: #000;
+    color: #ffffff;
   }
   
 /*fim da sessão oferta / inicio da sessão faq*/
@@ -567,6 +567,9 @@ footer h3 {
 
 
 @media screen and (max-width: 1020px) {
+    *{
+        text-align: center;
+    }
     
     header .hero {
         padding: 0;
