@@ -20,7 +20,7 @@ a {
     font-weight: 600;
     font-size: 22px;
     color: white;
-    padding: 10px 5%;
+    padding: 30px 5%;
     text-align: center;
     border-radius: 15px;
     margin: 10px auto;
@@ -57,21 +57,64 @@ header .hero p {
 
 .info-box {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.info {
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px;
+    scroll-padding-left: 20px;
+  }
+  
+  .info-box::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .info {
+    flex: 0 0 auto; /* impede de encolher e permite scroll */
+    width: 300px;
+    height: 280px;
     border: 1px solid goldenrod;
     border-radius: 15px;
-    padding: 5px 4%;
-    height: 280px;
-    width: 380px;
+    background-color: goldenrod;
+    color: white;
+    display: flex;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    align-items: center;
-    display: flex;
     flex-direction: column;
-}
+    position: relative;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    padding: 5px;
+  }
+  
+  .info h3 {
+    z-index: 2;
+    font-size: 22px;
+    padding: 0 10px;
+  }
+  
+  /* Ícones de fundo */
+  .x-icon::before,
+  .check-icon::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 1;
+  }
+  
+  .x-icon::before {
+    background-image: url('./assets/x-icon.svg');
+  }
+  
+  .check-icon::before {
+    background-image: url('./assets/check-icon.svg');
+  }
 /*Fim da sessão info-box / inicio da sessão sobre*/
 .sobre {
     display: flex;
@@ -339,9 +382,70 @@ footer h3 {
     .info-box {
         gap: 1.3rem;
     }
-    .info{
+    .info-box {
+        display: flex !important;         /* força o layout em linha */
+        flex-direction: row !important;   /* garante que não fique em coluna */
+        gap: 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px;
+        scroll-padding-left: 20px;
         width: 100%;
-    }
+        box-sizing: border-box;
+      }
+      
+      .info-box::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .info {
+        flex: 0 0 auto;
+        width: 200px;
+        height: 180px;
+        border: 1px solid goldenrod;
+        border-radius: 15px;
+        background-color: goldenrod;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        position: relative;
+        scroll-snap-align: start;
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+        padding: 5px;
+      }
+      
+      .info h3 {
+        z-index: 2;
+        font-size: 22px;
+        padding: 0 10px;
+      }
+      
+      /* Ícones de fundo */
+      .x-icon::before,
+      .check-icon::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.15;
+        z-index: 1;
+      }
+      
+      .x-icon::before {
+        background-image: url('./assets/x-icon.svg');
+      }
+      
+      .check-icon::before {
+        background-image: url('./assets/check-icon.svg');
+      }
+      
     .sobre img {
         width: 100%;
     }
