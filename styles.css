@@ -24,9 +24,28 @@ a {
     text-align: center;
     border-radius: 15px;
     margin: 10px auto;
+    animation: pulse 2s infinite; ;
 }
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.9;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.9;
+    }
+  }
+  
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
+}
+h2 span {
+    color: goldenrod;
 }
 p {
     font-family: 'Montserrat', sans-serif;
@@ -386,7 +405,7 @@ footer h3 {
     
     header .hero {
         padding: 0;
-        text-align: left;
+        text-align: center;
     }
     header .hero img {
         width: 100%;

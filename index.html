@@ -8,15 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
         <img src="./assets/logo.webp" alt="Logo do Pai do Estofado">
 
         <section class="hero">
-            <h1>APRENDA A GANHAR DINHEIRO VENDENDO ESTOFADOS DE ALTO PADRÃO PELA INTERNET</h1>
-            <img src="./assets/bg-hero.svg" alt="">
-            <p>
+            <h1 data-aos="fade-down" data-aos-duration="2000">APRENDA A GANHAR DINHEIRO VENDENDO ESTOFADOS DE ALTO PADRÃO PELA INTERNET</h1>
+            <img src="./assets/bg-hero.svg" alt="Foto do pai dos estofados" data-aos="zoom-in" data-aos-duration="2500">
+            <p data-aos="fade-up" data-aos-duration="2000">
                 Descubra como o @paidosestofados fatura alto com vendas 100% online usando apenas o celular e o WhatsApp — e como você também pode começar do zero!
             </p>
             <a class="cta" href="#">QUERO APRENDER COM O PAI DOS ESTOFADOS</a>
@@ -24,7 +27,7 @@
     </header>
     <main>
        <section class="info-quem">
-        <h2>PARA QUEM É ESSE EBOOK?</h2>
+        <h2>PARA QUEM É <span>ESSE EBOOK</span>?</h2>
             <div class="info-box">
                 <!--<div class="info x-icon">
                     <h3>SEM ESTOQUE</h3>
@@ -63,7 +66,7 @@
         <!--Fim da section info / inicio da section "sobre" -->
         <section class="sobre">
             <div class="sobre-text">
-                <h2>QUEM SOU EU?</h2>
+                <h2>QUEM SOU <span>EU</span>?</h2>
             <p>
                 Sou Ezequiel Veloso, criador do Pai dos Estofados, uma das maiores referências em vendas de sofás pela internet no Brasil. Desde 2019, vendo estofados de alto padrão 100% online, sem loja física, apenas com estratégia, posicionamento e vendas diretas pelo WhatsApp.
 
@@ -81,22 +84,22 @@
          <!--Fim da section sobre / inicio da section metodo -->
          <section class="metodo">
             <div class="metodo-text">
-                <h2>O QUE VOCÊ VAI GANHAR COM O MÉTODO?</h2>
+                <h2>O QUE VOCÊ VAI <span>GANHAR</span> COM O <span>MÉTODO</span> ?</h2>
 
                 <ul>
-                    <li>
+                    <li data-aos="fade-down" data-aos-duration="1500">
                         <h3>Método Completo em 7 Etapas</h3>
                         <p>Um roteiro detalhado para implementar seu negócio online de sofás do zero.</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-down" data-aos-duration="1500">
                         <h3>Exemplos Reais de Campanhas</h3>
                         <p>Análise de estratégias que geram vendas concrtas no Instagram.</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-duration="1500">
                         <h3>Modelos Prontos</h3>
                         <p>Templates e scripts que você pode adaptar imediatamente para seu negócio.</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-duration="1500">
                         <h3>Dicas Exclusivas</h3>
                         <p>Insights valiosos baseados em anos de experiência no mercado.</p>
                     </li>
@@ -107,7 +110,7 @@
             </a>
          </section>
         <section class="testimonials">
-            <h2>VEJA OS RESULTADOS DOS NOSSOS ALUNOS:</h2>
+            <h2>VEJA OS <span>RESULTADOS</span> DOS NOSSOS <span>ALUNOS</span>:</h2>
             <video width="640" height="360" controls>
                 <source src="./assets/video-feedback.mp4" type="video/mp4">
                 Seu navegador não suporta a tag de vídeo.
@@ -209,5 +212,8 @@
           
         <img src="./assets/logo.webp" alt="Logo do Pai do Estofado">
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
