@@ -26,41 +26,37 @@
         </section>
     </header>
     <main>
-       <section class="info-quem">
-        <h2>PARA QUEM É <span>ESSE EBOOK</span>?</h2>
-            <div class="info-box">
-                <!--<div class="info x-icon">
-                    <h3>SEM ESTOQUE</h3>
-                    </div>
-                    <div class="info x-icon">
-                    <h3>SEM PONTO FÍSICO</h3>
-                    </div>
-                    <div class="info check-icon">
-                        <h3>MÉTODO TESTADO E APROVADO POR QUEM VIVE DISSO</h3>
-                    </div>
-                -->
-                
+        <section class="info-quem">
+            <h2>PARA QUEM É <span>ESSE EBOOK</span>?</h2>
+          
+            <div class="scroll-container">
+              <button class="scroll-btn left" onclick="scrollInfoBox(-1)">‹</button>
+          
+              <div class="info-box" id="infoBox">
                 <div class="info check-icon">
-                    <h3>Quer empreender sem investir em estoque</h3>
+                  <h3>Quer empreender sem investir em estoque</h3>
                 </div>
                 <div class="info check-icon">
-                    <h3>Já vende móveis e quer escalar online</h3>
+                  <h3>Já vende móveis e quer escalar online</h3>
                 </div>
                 <div class="info check-icon">
-                    <h3>Está começando do zero, mas quer uma renda extra</h3>
+                  <h3>Está começando do zero, mas quer uma renda extra</h3>
                 </div>
                 <div class="info check-icon">
-                    <h3>Deseja trabalhar com celular e WhatsApp</h3>
-                </div>
-                
-                <div class="info check-icon">
-                    <h3>Quer aprender a vender produtos de alto valor com estratégias profissionais</h3>
+                  <h3>Deseja trabalhar com celular e WhatsApp</h3>
                 </div>
                 <div class="info check-icon">
-                    <h3>Está cansado de depender de um salário fixo e quer começar um negócio próprio com baixo risco</h3>
+                  <h3>Quer aprender a vender produtos de alto valor com estratégias profissionais</h3>
                 </div>
+                <div class="info check-icon">
+                  <h3>Está cansado de depender de um salário fixo e quer começar um negócio próprio com baixo risco</h3>
+                </div>
+              </div>
+          
+              <button class="scroll-btn right" onclick="scrollInfoBox(1)">›</button>
             </div>
-       </section>
+          </section>
+          
           
           
         <!--Fim da section info / inicio da section "sobre" -->
@@ -225,6 +221,17 @@
           
         <img src="./assets/logo.webp" alt="Logo do Pai do Estofado">
     </footer>
+    <script>
+        function scrollInfoBox(direction) {
+          const container = document.getElementById('infoBox');
+          const scrollAmount = 320; // Largura do card + gap
+          container.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+          });
+        }
+      </script>
+      
     <script>
         AOS.init();
     </script>

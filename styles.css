@@ -58,7 +58,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px 4%;
+    padding: 20px;
     gap: 1.3rem;
 }
 header .hero {
@@ -68,7 +68,7 @@ header .hero {
 }
 header .hero h1 {
     color: goldenrod;
-    font-size: 62px;
+    font-size: 42px;
 }
 header .hero p {
     font-size: 28px;
@@ -99,7 +99,7 @@ header .hero p {
     scroll-padding-left: 20px;
     
     align-items: center;
-    justify-content: center;
+    
   }
   
   .info-box::-webkit-scrollbar {
@@ -153,6 +153,39 @@ header .hero p {
   .check-icon::before {
     background-image: url('./assets/check-icon.svg');
   }
+  .scroll-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+  
+  .scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .scroll-btn.left {
+    left: 0;
+  }
+  
+  .scroll-btn.right {
+    right: 0;
+  }
+  
 /*Fim da sessão info-box / inicio da sessão sobre*/
 .sobre {
     display: flex;
@@ -544,11 +577,11 @@ footer h3 {
         
     }
     header .hero h1{
-        font-size: 32px;
+        font-size: 22px;
         
     }
     header .hero p {
-        font-size: 25px;
+        font-size: 18px;
     }
     section {
         flex-direction: column-reverse;
