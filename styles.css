@@ -102,7 +102,7 @@ header .hero p {
     flex-direction: column;
     position: relative;
     scroll-snap-align: start;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgb(255, 255, 255);
     padding: 5px;
   }
   
